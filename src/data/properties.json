@@ -31,5 +31,133 @@
                 "day":14,
                 "year":2022
             }
+        },
+        {
+            "id": "prop3",
+            "type": "Bungalow",
+            "bedrooms": 4,
+            "price": 850000,
+            "tenure": "Freehold",
+            "description": "A beautifully presented four-bedroom detached bungalow located on a quiet residential road. The property boasts a large open-plan living area with a modern fitted kitchen, dining space, and bi-folding doors leading to a landscaped garden. Additional features include underfloor heating, a garage, and off-street parking for two cars.",
+            "location": "Oakwood Avenue, Bromley BR1",
+            "picture": "images/prop3pic1small.jpg",
+            "url": "properties/prop3.html",
+            "added": {
+                "month": "November",
+                "day": 5,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop4",
+            "type": "Flat",
+            "bedrooms": 1,
+            "price": 275000,
+            "tenure": "Leasehold",
+            "description": "A stylish one-bedroom flat situated in the heart of the town center. This property features a bright living area, a modern kitchen, and a spacious double bedroom with built-in wardrobes. Ideal for first-time buyers or as a buy-to-let investment.",
+            "location": "High Street, Bromley BR1",
+            "picture": "images/prop4pic1small.jpg",
+            "url": "properties/prop4.html",
+            "added": {
+                "month": "August",
+                "day": 20,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop5",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 1250000,
+            "tenure": "Freehold",
+            "description": "A magnificent five-bedroom detached house with a large private garden. The property offers three reception rooms, a conservatory, a modern kitchen, and four bathrooms, including two en-suites. Located close to excellent schools and local amenities.",
+            "location": "Elmfield Park, Orpington BR6",
+            "picture": "images/prop5pic1small.jpg",
+            "url": "properties/prop5.html",
+            "added": {
+                "month": "July",
+                "day": 15,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop6",
+            "type": "Apartment",
+            "bedrooms": 2,
+            "price": 450000,
+            "tenure": "Leasehold",
+            "description": "A modern two-bedroom apartment located on the top floor of a contemporary development. The property features an open-plan living and dining area, a fitted kitchen with integrated appliances, and a private balcony with stunning views of the city skyline.",
+            "location": "The Tower, Bromley BR2",
+            "picture": "images/prop6pic1small.jpg",
+            "url": "properties/prop6.html",
+            "added": {
+                "month": "June",
+                "day": 10,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop7",
+            "type": "Cottage",
+            "bedrooms": 3,
+            "price": 675000,
+            "tenure": "Freehold",
+            "description": "Charming three-bedroom period cottage located in a tranquil village setting. The property includes two reception rooms, a cozy fireplace, a country-style kitchen, and a beautifully maintained garden.",
+            "location": "West Lane, Orpington BR5",
+            "picture": "images/prop7pic1small.jpg",
+            "url": "properties/prop7.html",
+            "added": {
+                "month": "May",
+                "day": 28,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop8",
+            "type": "Maisonette",
+            "bedrooms": 2,
+            "price": 325000,
+            "tenure": "Leasehold",
+            "description": "A delightful two-bedroom maisonette offering its own private entrance and garden. Featuring a spacious living room, a fitted kitchen, and a recently refurbished bathroom. Conveniently located near local schools and transport links.",
+            "location": "Hillcrest Road, Bromley BR1",
+            "picture": "images/prop8pic1small.jpg",
+            "url": "properties/prop8.html",
+            "added": {
+                "month": "April",
+                "day": 18,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop9",
+            "type": "Flat",
+            "bedrooms": 3,
+            "price": 550000,
+            "tenure": "Leasehold",
+            "description": "A spacious three-bedroom flat in a sought-after location. The property offers a large living area, a modern kitchen, and two bathrooms. The development benefits from a concierge service and private parking.",
+            "location": "Kingsway Court, Orpington BR6",
+            "picture": "images/prop9pic1small.jpg",
+            "url": "properties/prop9.html",
+            "added": {
+                "month": "March",
+                "day": 14,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop10",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 600000,
+            "tenure": "Freehold",
+            "description": "An immaculately presented three-bedroom terraced house located in a quiet cul-de-sac. The property features a modern kitchen, a bright living room with French doors to the garden, and a master bedroom with an en-suite.",
+            "location": "Willow Close, Bromley BR1",
+            "picture": "images/prop10pic1small.jpg",
+            "url": "properties/prop10.html",
+            "added": {
+                "month": "February",
+                "day": 8,
+                "year": 2022
+            }
         }
 ]}
