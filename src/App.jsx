@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import searchForm from searchForm;
+import SearchBar from './components/searchbar'
+import NavigationBar from './components/NavigationBar'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
@@ -8,15 +10,10 @@ function App() {
   return (
     <>
     <header>
-      <ol>
-        <li>Buy</li>
-        <li>Rent</li>
-        <li>House Prices</li>
-        <li>Commercial</li>
-      </ol>
+    <NavigationBar/>
     </header>
     <main>
-  
+    <SearchBar/>
     </main>
     <footer></footer>
     </>
