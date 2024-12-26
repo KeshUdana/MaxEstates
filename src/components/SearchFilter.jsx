@@ -1,18 +1,21 @@
 import React from "react";
+import "../CSSFiles/SearchFilter.css";
 
 function SearchFilter() {
   return (
     <>
-      <div>
+      <div className="Main SearchFilter">
         <form>
           <div className="form-check">
             <input
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckDefault"
+              id="flexCheckHouse"
             />
-            <label className="form-check-label" htmlFor="flexCheckDefault">House</label>
+            <label className="form-check-label" htmlFor="flexCheckHouse">
+              House
+            </label>
           </div>
 
           <div className="form-check">
@@ -20,10 +23,12 @@ function SearchFilter() {
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckChecked"
+              id="flexCheckApartment"
               defaultChecked
             />
-            <label className="form-check-label" htmlFor="flexCheckChecked">Apartment</label>
+            <label className="form-check-label" htmlFor="flexCheckApartment">
+              Apartment
+            </label>
           </div>
 
           <div className="form-check">
@@ -31,10 +36,11 @@ function SearchFilter() {
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckChecked"
-              defaultChecked
+              id="flexCheckCondo"
             />
-            <label className="form-check-label" htmlFor="flexCheckChecked">Condo</label>
+            <label className="form-check-label" htmlFor="flexCheckCondo">
+              Condo
+            </label>
           </div>
 
           <div className="form-check">
@@ -42,10 +48,11 @@ function SearchFilter() {
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckChecked"
-              defaultChecked
+              id="flexCheckBungalow"
             />
-            <label className="form-check-label" htmlFor="flexCheckChecked">Bungalow</label>
+            <label className="form-check-label" htmlFor="flexCheckBungalow">
+              Bungalow
+            </label>
           </div>
 
           <div className="form-check">
@@ -53,10 +60,18 @@ function SearchFilter() {
               className="form-check-input"
               type="checkbox"
               value=""
-              id="flexCheckChecked"
-              defaultChecked
+              id="flexCheckVilla"
             />
-            <label className="form-check-label" htmlFor="flexCheckChecked">Villa</label>
+            <label className="form-check-label" htmlFor="flexCheckVilla">
+              Villa
+            </label>
+          </div>
+
+          <div className="priceRange">
+            <label htmlFor="customRange1" className="form-label">
+              Price Range
+            </label>
+            <input type="range" className="form-range" id="customRange1" />
           </div>
         </form>
       </div>

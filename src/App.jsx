@@ -15,7 +15,7 @@ function App() {
     </header>
     
     <main>
-      <div className='HomePageCard'>
+    <div className='HomePageCard'>
     <SearchBar/>
     <SearchFilter/>
     </div>
