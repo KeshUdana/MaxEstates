@@ -5,12 +5,10 @@ function SearchBar() {
     return (
         <>
             <div className="search">
-                <div className="input">
-                    <input type="text" placeholder="Search" />
-                    <button type="button" className="btn btn-primary">
-                        Search
-                    </button>
-                </div>
+    <form>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
             </div>
         </>
     );

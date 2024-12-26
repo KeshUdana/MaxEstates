@@ -13,10 +13,12 @@ function App() {
     <header>
     <NavigationBar/>
     </header>
+    <div>
     <main>
     <SearchBar/>
     <SearchFilter/>
     </main>
+    </div>
     <footer></footer>
     </>
       
