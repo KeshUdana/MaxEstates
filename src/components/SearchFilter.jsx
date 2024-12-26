@@ -5,83 +5,59 @@ function SearchFilter() {
     <>
       <div>
         <form>
-          <div className="form-group">
-            <label htmlFor="propertyType">Property Type</label>
-            <div id="propertyType">
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="houseCheck"
-                />
-                <label className="form-check-label" htmlFor="houseCheck">
-                  House
-                </label>
-              </div>
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="bungalowCheck"
-                />
-                <label className="form-check-label" htmlFor="bungalowCheck">
-                  Bungalow
-                </label>
-              </div>
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="apartmentCheck"
-                />
-                <label className="form-check-label" htmlFor="apartmentCheck">
-                  Apartment
-                </label>
-              </div>
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="condoCheck"
-                />
-                <label className="form-check-label" htmlFor="condoCheck">
-                  Condo
-                </label>
-              </div>
-              <div className="form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="villaCheck"
-                />
-                <label className="form-check-label" htmlFor="villaCheck">
-                  Villa
-                </label>
-              </div>
-            </div>
-          </div>
-          <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Password</label>
-            <input
-              type="password"
-              className="form-control"
-              id="exampleInputPassword1"
-              placeholder="Password"
-            />
-          </div>
           <div className="form-check">
             <input
-              type="checkbox"
               className="form-check-input"
-              id="exampleCheck1"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
             />
-            <label className="form-check-label" htmlFor="exampleCheck1">
-              Check me out
-            </label>
+            <label className="form-check-label" htmlFor="flexCheckDefault">House</label>
           </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
+
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              defaultChecked
+            />
+            <label className="form-check-label" htmlFor="flexCheckChecked">Apartment</label>
+          </div>
+
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              defaultChecked
+            />
+            <label className="form-check-label" htmlFor="flexCheckChecked">Condo</label>
+          </div>
+
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              defaultChecked
+            />
+            <label className="form-check-label" htmlFor="flexCheckChecked">Bungalow</label>
+          </div>
+
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              defaultChecked
+            />
+            <label className="form-check-label" htmlFor="flexCheckChecked">Villa</label>
+          </div>
         </form>
       </div>
     </>
