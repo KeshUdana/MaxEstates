@@ -4,8 +4,9 @@ import "../CSSFiles/SearchFilter.css";
 function SearchFilter() {
   return (
     <>
-      <div className="Main SearchFilter">
-        <form>
+    <div className="container text-center">
+      <div className="row row-cols-2">
+        <div className="col">
           <div className="form-check">
             <input
               className="form-check-input"
@@ -17,7 +18,8 @@ function SearchFilter() {
               House
             </label>
           </div>
-
+        </div>
+        <div className="col">
           <div className="form-check">
             <input
               className="form-check-input"
@@ -30,7 +32,8 @@ function SearchFilter() {
               Apartment
             </label>
           </div>
-
+        </div>
+        <div className="col">
           <div className="form-check">
             <input
               className="form-check-input"
@@ -42,7 +45,8 @@ function SearchFilter() {
               Condo
             </label>
           </div>
-
+        </div>
+        <div className="col">
           <div className="form-check">
             <input
               className="form-check-input"
@@ -54,20 +58,15 @@ function SearchFilter() {
               Bungalow
             </label>
           </div>
+        </div>
+      </div>
+    </div>
 
-          <div className="form-check">
-            <input
-              className="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckVilla"
-            />
-            <label className="form-check-label" htmlFor="flexCheckVilla">
-              Villa
-            </label>
-          </div>
+export default SearchFilter;
+      <div className="Main SearchFilter">
 
-          <div className="priceRange">
+        <form>
+        <div className="priceRange">
             <label htmlFor="customRange1" className="form-label">
               Price Range
             </label>

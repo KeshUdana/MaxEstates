@@ -10,15 +10,15 @@ function App() {
 
   return (
     <>
-    <header>
+    <header className='header'>
     <NavigationBar/>
     </header>
     
     <main>
-    <div className='HomePageCard'>
-    <SearchBar/>
-    <SearchFilter/>
-    </div>
+      <div className='HomePageCard'>
+        <div className='SearchBar'><SearchBar/></div>
+        <div className='SearchFilter'><SearchFilter/></div>
+      </div>
     </main>
     
     <footer></footer>

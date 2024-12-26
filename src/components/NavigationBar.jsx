@@ -4,100 +4,106 @@ import "../CSSFiles/Navigation.css";
 function NavigationBar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-light bg-dark-subtle text-primary">
         <a className="navbar-brand" href="#">
           maXspaces
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+        <div>
+          <ul className="nav nav-tabs">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
                 href="#"
-                id="buyDropdown1"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
                 aria-expanded="false"
               >
                 Buy
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Property for Sale
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Get a Mortgage
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
                 href="#"
-                id="rentDropdown"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
                 aria-expanded="false"
               >
                 Rent
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Property for Rent
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Student property
+                  </a>
+                </li>
+              </ul>
             </li>
 
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
                 href="#"
-                id="housePricesDropdown"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
                 aria-expanded="false"
               >
                 House Prices
               </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown3">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Prices
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Get a valuation
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+              >
+                Commercial
+              </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Commercial property for rent
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Commercial property for sale
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
