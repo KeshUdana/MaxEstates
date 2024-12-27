@@ -4,8 +4,8 @@ import "../CSSFiles/Navigation.css";
 function NavigationBar() {
   return (
     <>
-      <nav className="navbar navbar-light bg-dark-subtle text-primary">
-        <a className="navbar-brand" href="#">
+      <nav className="navbar text-primary p-1 rounded-1">
+        <a className="navbar-brand font-color-white" href="#">
           maXspaces
         </a>
         <div>

@@ -2,5 +2,6 @@
     width: 100%;
     position: fixed;
     top: 0;
+    background-color: #020f7e;
     z-index: 1000; /* Ensures the navbar stays on top of other elements */
   }
