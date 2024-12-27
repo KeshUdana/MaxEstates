@@ -4,6 +4,7 @@ import NavigationBar from './components/NavigationBar'
 import SearchFilter from './components/SearchFilter';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import LoginCard from './components/LoginCard';
 
 function App() {
   
@@ -18,6 +19,9 @@ function App() {
       <div className='HomePageCard'>
         <div className='SearchBar'><SearchBar/></div>
         <div className='SearchFilter'><SearchFilter/></div>
+      </div>
+      <div className='"d-flex justify-content-center align-items-center vh-100"'>
+      <LoginCard/>
       </div>
     </main>
     
