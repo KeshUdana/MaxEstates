@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SearchBar from './components/searchbar'
 import NavigationBar from './components/NavigationBar'
 import SearchFilter from './components/SearchFilter';
+import Carousel from './components/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import LoginCard from './components/LoginCard';
@@ -23,6 +24,7 @@ function App() {
       <div className='"d-flex justify-content-center align-items-center vh-100"'>
       <LoginCard/>
       </div>
+      <div className='Main Carousel'><Carousel/></div>
     </main>
     
     <footer></footer>

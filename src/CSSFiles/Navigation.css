@@ -1,7 +1,10 @@
-.navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #020f7e;
-    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+
+.custom-gradient {
+    background: linear-gradient(to right, #f1f5f9, #e2e8f0, #f1f5f9); /* Tailwind equivalent for slate-100 and slate-200 */
   }
+  
+
+  .font-color-white {
+    color: white;
+  }
+  

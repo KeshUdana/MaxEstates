@@ -2,16 +2,29 @@ import React from "react";
 import "../CSSFiles/SearchBar.css";
 
 function SearchBar() {
-    return (
-        <>
-            <div className="search">
-    <form>
-      <input class="form-control mr-sm-2" type="search" placeholder="Start searching" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-            </div>
-        </>
-    );
+  return (
+    <div className="border rounded p-4 bg-success bg-gradient">
+      <form>
+        <h2 className="mb-3 ">Search for properties to rent or buy...</h2>
+        <div className="input-group mb-3">
+          <input
+            className="form-control"
+            type="search"
+            placeholder="e.g., House"
+            aria-label="Search"
+          />
+        </div>
+        <div className="d-flex gap-2">
+          <button className="custom-button" type="submit">
+            For Sale
+          </button>
+          <button className="custom-button" type="submit">
+            To Rent
+          </button>
+        </div>
+      </form>
+    </div>
+  );
 }
 
 export default SearchBar;

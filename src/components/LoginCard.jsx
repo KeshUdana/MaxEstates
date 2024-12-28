@@ -6,10 +6,9 @@ function LoginCard() {
     <div className="d-flex justify-content-center align-items-center ">
       <div className="" style={{ width: "30rem" }}>
         <div className="card-body">
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h5>Sign in to streamline your search</h5>
+          <p>Save properties, create alerts and keep track of the enquiries you send to agents.</p>
+          <button className="LoginButton" type="submit">Sign in or create account</button>
         </div>
       </div>
     </div>

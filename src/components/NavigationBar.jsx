@@ -4,7 +4,7 @@ import "../CSSFiles/Navigation.css";
 function NavigationBar() {
   return (
     <>
-      <nav className="navbar text-primary p-1 rounded-1">
+      <nav className="navbar text-primary p-1 rounded-1 custom-gradient">
         <a className="navbar-brand font-color-white" href="#">
           maXspaces
         </a>
