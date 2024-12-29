@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSSFiles/SearchFilter.css";
+
 
 function SearchFilter() {
   return (
@@ -40,6 +40,7 @@ function SearchFilter() {
               className="form-control"
               id="priceMin"
               placeholder="Min Price"
+              aria-label="Amount (to the nearest dollar)"
             />
           </div>
           <div className="col">
