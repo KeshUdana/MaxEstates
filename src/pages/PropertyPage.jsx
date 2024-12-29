@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import propertiesData from '../data/properties.json';
+import properties from './data/properties.json';
 
 const PropertyPage = () => {
-  const { id } = useParams<{ id: string }>();
-  const property = propertiesData.properties.find((prop) => prop.id === id);
+  const { id } = useParams<{ id: string }>(properties.id);
+  const property = properties.properties.find((prop) => prop.id === id);
 
   if (!property) {
     return <div>Property not found</div>;
