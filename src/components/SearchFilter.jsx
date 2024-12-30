@@ -102,7 +102,7 @@ function SearchFilter() {
           </div>
           <div className="col">
             <label htmlFor="dateBetween" className="form-label">
-              Between Dates<p>k</p>
+              Between Dates
             </label>
             <input
               type="date"

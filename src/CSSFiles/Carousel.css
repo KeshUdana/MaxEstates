@@ -1,0 +1,35 @@
+.carousel-main {
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel img {
+    width: 100%;         /* Ensures the image fills the width of the container */
+    height: auto;        /* Adjusts height proportionally */
+    max-height: 400px;   /* Sets a consistent maximum height */
+    object-fit: cover;   /* Ensures the image fills the container without distortion */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel img {
+        max-height: 300px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel img {
+        max-height: 200px; /* Adjust height for mobile devices */
+    }
+}
+
+/* Carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 50%; /* Adjust icon size for better visibility */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Narrower controls for better visibility on small screens */
+}

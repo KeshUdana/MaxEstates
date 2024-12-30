@@ -2,6 +2,11 @@
 .custom-gradient {
     background: linear-gradient(to right, #f1f5f9, #e2e8f0, #f1f5f9); /* Tailwind equivalent for slate-100 and slate-200 */
   }
+.navbar-logo {
+    width: 40px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and brand name */
+  }
   
 
   .font-color-white {
