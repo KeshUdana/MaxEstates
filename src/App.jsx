@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-    
+    <Router>
       <header className="header">
         <NavigationBar />
       </header>
@@ -52,6 +52,7 @@ function App() {
       </body>
 
       <footer className='footer'><Footer/></footer>
+    </Router>
     </>
   );
 }
