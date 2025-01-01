@@ -5,7 +5,6 @@ function NavigationBar() {
   return (
     <>
       <nav className="navbar text-primary p-1 rounded-1 custom-gradient">
-      <img src="public/assets/logo.svg" className="navbar-logo" alt="Logo" />
         <a className="navbar-brand font-color-white" href="#">
           maXspaces
         </a>
@@ -96,12 +95,12 @@ function NavigationBar() {
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Commercial property for rent
+                    For rent
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Commercial property for sale
+                    For sale
                   </a>
                 </li>
               </ul>

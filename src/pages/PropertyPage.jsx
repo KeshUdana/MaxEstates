@@ -19,6 +19,7 @@ const PropertyPage = () => {
       <p>Location: {property.location}</p>
       <p>Tenure: {property.tenure}</p>
       <p>Bedrooms: {property.bedrooms}</p>
+      <p>Description:{property.description}</p>
     </div>
   );
 };

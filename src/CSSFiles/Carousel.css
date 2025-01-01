@@ -7,6 +7,7 @@
     width: 100%;         /* Ensures the image fills the width of the container */
     height: auto;        /* Adjusts height proportionally */
     max-height: 400px;   /* Sets a consistent maximum height */
+    min-height: 100px;
     object-fit: cover;   /* Ensures the image fills the container without distortion */
 }
 

@@ -14,13 +14,12 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 576); // Check if screen width is 576px or smaller
+      setIsMobile(window.innerWidth <= 576); 
     };
-// Run on component mount
+
     handleResize();
-// Add event listener
     window.addEventListener('resize', handleResize);
-    // Cleanup
+  
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
@@ -30,13 +29,9 @@ function App() {
       <header className="header">
         <NavigationBar />
       </header>
-<body className='bg-success bg-gradient'>
+      <body>
       <main>
-        {!isMobile && ( // Conditionally render the carousel
-          <div className="MainCarousel">
-            <Carousel />
-          </div>
-        )}
+        {!isMobile && ( <div className="MainCarousel"><Carousel /></div>)}
         <div className="HomePageCard">
           <div className="SearchBar">
             <SearchBar />
