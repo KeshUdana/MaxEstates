@@ -1,7 +1,96 @@
-import React from "react";
+import React, { useState } from "react";
 
+// Sample JSON data (you'll replace this with your actual data import)
+const data = require("../data/properties.json").properties;
 
 function SearchFilter() {
+  const [filters, setFilters] = useState({
+    propertyTypes: [],
+    priceMin: "",
+    priceMax: "",
+    bedroomsMin: "",
+    bedroomsMax: "",
+    dateAfter: "",
+    dateBefore: "",
+    postcode: "",
+  });
+
+  const [filteredData, setFilteredData] = useState(data);
+
+  // Handle checkbox change for property types
+  const handleCheckboxChange = (type) => {
+    setFilters((prev) => {
+      const newTypes = prev.propertyTypes.includes(type)
+        ? prev.propertyTypes.filter((t) => t !== type)
+        : [...prev.propertyTypes, type];
+      return { ...prev, propertyTypes: newTypes };
+    });
+  };
+
+  // Handle input changes for other filters
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    setFilters((prev) => ({ ...prev, [id]: value }));
+  };
+
+  // Apply filters
+  const applyFilters = () => {
+    let results = data;
+
+    // Filter by property types
+    if (filters.propertyTypes.length > 0) {
+      results = results.filter((item) =>
+        filters.propertyTypes.includes(item.type)
+      );
+    }
+
+    // Filter by price range
+    if (filters.priceMin) {
+      results = results.filter((item) => item.price >= parseInt(filters.priceMin));
+    }
+    if (filters.priceMax) {
+      results = results.filter((item) => item.price <= parseInt(filters.priceMax));
+    }
+
+    // Filter by bedrooms
+    if (filters.bedroomsMin) {
+      results = results.filter((item) => item.bedrooms >= parseInt(filters.bedroomsMin));
+    }
+    if (filters.bedroomsMax) {
+      results = results.filter((item) => item.bedrooms <= parseInt(filters.bedroomsMax));
+    }
+
+    // Filter by date
+    if (filters.dateAfter) {
+      const afterDate = new Date(filters.dateAfter);
+      results = results.filter((item) => {
+        const itemDate = new Date(
+          `${item.added.year}-${item.added.month}-${item.added.day}`
+        );
+        return itemDate >= afterDate;
+      });
+    }
+
+    if (filters.dateBefore) {
+      const beforeDate = new Date(filters.dateBefore);
+      results = results.filter((item) => {
+        const itemDate = new Date(
+          `${item.added.year}-${item.added.month}-${item.added.day}`
+        );
+        return itemDate <= beforeDate;
+      });
+    }
+
+    // Filter by postcode (simple substring match)
+    if (filters.postcode) {
+      results = results.filter((item) =>
+        item.location.toLowerCase().includes(filters.postcode.toLowerCase())
+      );
+    }
+
+    setFilteredData(results);
+  };
+
   return (
     <div className="container text-center border rounded p-4 bg-light bg-gradient">
       <h2 className="mb-4">Search Filter</h2>
@@ -17,6 +106,8 @@ function SearchFilter() {
                   className="form-check-input"
                   type="checkbox"
                   id={`flexCheck${type}`}
+                  checked={filters.propertyTypes.includes(type)}
+                  onChange={() => handleCheckboxChange(type)}
                 />
                 <label className="form-check-label" htmlFor={`flexCheck${type}`}>
                   {type}
@@ -39,8 +130,9 @@ function SearchFilter() {
               type="number"
               className="form-control"
               id="priceMin"
+              value={filters.priceMin}
+              onChange={handleInputChange}
               placeholder="Min Price"
-              aria-label="Amount (to the nearest dollar)"
             />
           </div>
           <div className="col">
@@ -51,6 +143,8 @@ function SearchFilter() {
               type="number"
               className="form-control"
               id="priceMax"
+              value={filters.priceMax}
+              onChange={handleInputChange}
               placeholder="Max Price"
             />
           </div>
@@ -69,6 +163,8 @@ function SearchFilter() {
               type="number"
               className="form-control"
               id="bedroomsMin"
+              value={filters.bedroomsMin}
+              onChange={handleInputChange}
               placeholder="Min Bedrooms"
             />
           </div>
@@ -80,6 +176,8 @@ function SearchFilter() {
               type="number"
               className="form-control"
               id="bedroomsMax"
+              value={filters.bedroomsMax}
+              onChange={handleInputChange}
               placeholder="Max Bedrooms"
             />
           </div>
@@ -98,16 +196,20 @@ function SearchFilter() {
               type="date"
               className="form-control"
               id="dateAfter"
+              value={filters.dateAfter}
+              onChange={handleInputChange}
             />
           </div>
           <div className="col">
-            <label htmlFor="dateBetween" className="form-label">
-              Between Dates
+            <label htmlFor="dateBefore" className="form-label">
+              Before Date
             </label>
             <input
               type="date"
               className="form-control"
-              id="dateBetween"
+              id="dateBefore"
+              value={filters.dateBefore}
+              onChange={handleInputChange}
             />
           </div>
         </div>
@@ -120,15 +222,30 @@ function SearchFilter() {
           type="text"
           className="form-control"
           id="postcode"
+          value={filters.postcode}
+          onChange={handleInputChange}
           placeholder="Enter Postcode"
         />
       </div>
 
       {/* Submit Button */}
       <div>
-        <button type="submit" className="btn btn-primary">
+        <button type="button" className="btn btn-primary" onClick={applyFilters}>
           Apply Filters
         </button>
+      </div>
+
+      {/* Display Results */}
+      <div className="mt-4">
+        <h3>Results</h3>
+        <ul className="list-group">
+          {filteredData.map((item) => (
+            <li className="list-group-item" key={item.id}>
+              <h5>{item.type} - {item.price}</h5>
+              <p>{item.location}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
