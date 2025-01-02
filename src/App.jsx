@@ -7,6 +7,7 @@ import Carousel from "./components/Carousel";
 import LoginCard from "./components/LoginCard";
 import Results from "./components/Results"; // Import Results component
 import Footer from "./components/Footer";
+import PropertyPage from "./components/PropertyPage"; // Import PropertyPage as a component
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
   const [filters, setFilters] = useState(null); // State to store filters
   const [filteredResults, setFilteredResults] = useState([]); // Store filtered data
+  const [selectedProperty, setSelectedProperty] = useState(null); // Track selected property for PropertyPage
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +28,10 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const handlePropertyClick = (property) => {
+    setSelectedProperty(property); // Set the clicked property to show in PropertyPage
+  };
+
   return (
     <Router>
       <div className="app-container">
@@ -34,26 +40,36 @@ function App() {
         </header>
         <main>
           <div className="HomePageCard">
-            <div className="SearchFilter">
-              <SearchFilter setFilters={setFilters} setResults={setFilteredResults} />
-            </div>
-            <div className="SearchBar">
-              <SearchBar setFilters={setFilters} />
-            </div>
+            <Routes>
+              <Route
+                path="/"
+                element={<SearchFilter setFilters={setFilters} setResults={setFilteredResults} />}
+              />
+            </Routes>
           </div>
+
           {filters && (
             <div className="results-grid mt-4">
               {/* Display Results component when filters are applied */}
-              <Results results={filteredResults} />
+              <Results results={filteredResults} onPropertyClick={handlePropertyClick} />
             </div>
           )}
+
+          {selectedProperty && (
+            <div className="property-page-container">
+              {/* Conditionally render PropertyPage when a property is selected */}
+              <PropertyPage property={selectedProperty} />
+            </div>
+          )}
+
           <div className="d-flex justify-content-center align-items-center vh-80">
             <LoginCard />
           </div>
+
+          <footer className="footer">
+            <Footer />
+          </footer>
         </main>
-        <footer className="footer">
-          <Footer />
-        </footer>
       </div>
     </Router>
   );

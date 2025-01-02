@@ -19,7 +19,7 @@ function Footer() {
   }, []);
 
   return (
-    <footer className={`footer bg-dark text-light py-4 ${isFooterVisible ? "visible" : "hidden"}`}>
+    <footer className={`footer bg-dark text-light py-4 z-index-300${isFooterVisible ? "visible" : "hidden"}`}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-4">
