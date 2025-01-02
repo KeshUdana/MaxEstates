@@ -159,5 +159,101 @@
                 "day": 8,
                 "year": 2022
             }
+        },
+        {
+            "id": "prop21",
+			"type": "Penthouse",
+            "bedrooms": 3,
+			"price": 1250000,
+			"tenure": "Leasehold",
+			"description": "A stunning three-bedroom penthouse offering panoramic views of the city. The property features a spacious open-plan kitchen/living area, three luxury bathrooms, and a private roof terrace. Secure underground parking and 24-hour concierge are included.",
+			"location": "Skyline Towers, Bromley BR2",
+			"picture": "images/prop21pic1small.jpg",
+			"url": "properties/prop21.html",
+            "added": {
+                "month": "January",
+                "day": 20,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop22",
+			"type": "Studio",
+            "bedrooms": 1,
+			"price": 225000,
+			"tenure": "Leasehold",
+			"description": "A compact yet well-designed studio flat located close to transport links. The flat features a modern kitchen, a living/bedroom area, and a sleek bathroom. Ideal for professionals or as a pied-à-terre.",
+			"location": "Central Avenue, Bromley BR1",
+			"picture": "images/prop22pic1small.jpg",
+			"url": "properties/prop22.html",
+            "added": {
+                "month": "December",
+                "day": 15,
+                "year": 2021
+            }
+        },
+        {
+            "id": "prop23",
+			"type": "Villa",
+            "bedrooms": 5,
+			"price": 1750000,
+			"tenure": "Freehold",
+			"description": "An exquisite five-bedroom villa with expansive gardens and a private swimming pool. This luxury property offers a grand reception hall, a modern kitchen, and a master suite with a walk-in wardrobe and en-suite bathroom.",
+			"location": "Grange Road, Orpington BR6",
+			"picture": "images/prop23pic1small.jpg",
+			"url": "properties/prop23.html",
+            "added": {
+                "month": "November",
+                "day": 2,
+                "year": 2021
+            }
+        },
+        {
+            "id": "prop24",
+			"type": "Flat",
+            "bedrooms": 2,
+			"price": 425000,
+			"tenure": "Leasehold",
+			"description": "A charming two-bedroom flat featuring a spacious lounge, a separate kitchen, and a balcony overlooking communal gardens. Located in a quiet residential area close to local amenities.",
+			"location": "Larch Grove, Bromley BR1",
+			"picture": "images/prop24pic1small.jpg",
+			"url": "properties/prop24.html",
+            "added": {
+                "month": "October",
+                "day": 10,
+                "year": 2021
+            }
+        },
+        {
+            "id": "prop25",
+			"type": "House",
+            "bedrooms": 4,
+			"price": 875000,
+			"tenure": "Freehold",
+			"description": "A spacious four-bedroom detached house offering a large kitchen/diner, a conservatory, and a beautifully landscaped garden. Perfect for families, with excellent schools nearby.",
+			"location": "Maple Lane, Orpington BR5",
+			"picture": "images/prop25pic1small.jpg",
+			"url": "properties/prop25.html",
+            "added": {
+                "month": "September",
+                "day": 5,
+                "year": 2021
+            }
+        },
+        {
+            "id": "prop26",
+			"type": "Apartment",
+            "bedrooms": 1,
+			"price": 300000,
+			"tenure": "Leasehold",
+			"description": "A contemporary one-bedroom apartment in a secure development. The property includes an open-plan kitchen/living area, a double bedroom, and access to a residents-only gym.",
+			"location": "Parkside Residences, Bromley BR2",
+			"picture": "images/prop26pic1small.jpg",
+			"url": "properties/prop26.html",
+            "added": {
+                "month": "August",
+                "day": 18,
+                "year": 2021
+            }
         }
 ]}

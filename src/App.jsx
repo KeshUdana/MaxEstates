@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SearchBar from "./components/Searchbar";
 import NavigationBar from "./components/NavigationBar";
 import SearchFilter from "./components/SearchFilter";
-import Carousel from "./components/Carousel";
 import LoginCard from "./components/LoginCard";
-import Results from "./components/Results"; // Import Results component
+import Results from "./components/Results"; 
 import Footer from "./components/Footer";
-import PropertyPage from "./components/PropertyPage"; // Import PropertyPage as a component
+import PropertyPage from "./components/PropertyPage"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
-  const [filters, setFilters] = useState(null); // State to store filters
-  const [filteredResults, setFilteredResults] = useState([]); // Store filtered data
-  const [selectedProperty, setSelectedProperty] = useState(null); // Track selected property for PropertyPage
+  const [filters, setFilters] = useState(null); 
+  const [filteredResults, setFilteredResults] = useState([]); 
+  const [selectedProperty, setSelectedProperty] = useState(null); 
+  const [footerVisible, setFooterVisible] = useState(false); 
 
   useEffect(() => {
     const handleResize = () => {
@@ -28,8 +27,23 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      
+      const isBottom =
+        window.innerHeight + document.documentElement.scrollTop >=
+        document.documentElement.offsetHeight - 1; 
+      setFooterVisible(isBottom); 
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handlePropertyClick = (property) => {
-    setSelectedProperty(property); // Set the clicked property to show in PropertyPage
+    setSelectedProperty(property); 
   };
 
   return (
@@ -66,7 +80,8 @@ function App() {
             <LoginCard />
           </div>
 
-          <footer className="footer">
+          
+          <footer className={`footer ${footerVisible ? "footer-visible" : ""}`}>
             <Footer />
           </footer>
         </main>

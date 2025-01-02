@@ -1,25 +1,17 @@
-.footer.visible {
-    transform: translateY(0);
-  }
-  
-  .footer.hidden {
-    transform: translateY(100%);
-  }
-  
-  .footer .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer .bi {
-    transition: color 0.3s ease;
-  }
-  
-  .footer .bi:hover {
-    color: #007bff; /* Bootstrap primary color */
-  }
-  
+.footer {
+  position: fixed;
+  bottom: -100px; /* Start off-screen */
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa; /* Adjust background color as needed */
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for sliding up */
+}
+
+.footer-visible {
+  bottom: 0; /* Footer becomes visible when user reaches bottom */
+  opacity: 1;
+  visibility: visible;
+}
