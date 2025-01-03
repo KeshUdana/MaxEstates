@@ -64,7 +64,6 @@ function App() {
 
           {filters && (
             <div className="results-grid mt-4">
-              {/* Display Results component when filters are applied */}
               <Results results={filteredResults} onPropertyClick={handlePropertyClick} />
             </div>
           )}
