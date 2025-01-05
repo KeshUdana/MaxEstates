@@ -18,7 +18,7 @@
         },
 		{
             "id":"prop2",
-			"type":"Flat",
+			"type":"Apartment",
             "bedrooms":2,
 			"price":399995,
 			"tenure":"Freehold",
@@ -50,7 +50,7 @@
         },
         {
             "id": "prop4",
-            "type": "Flat",
+            "type": "Apartment",
             "bedrooms": 1,
             "price": 275000,
             "tenure": "Leasehold",
@@ -114,7 +114,7 @@
         },
         {
             "id": "prop8",
-            "type": "Maisonette",
+            "type": "Condo",
             "bedrooms": 2,
             "price": 325000,
             "tenure": "Leasehold",
@@ -130,7 +130,7 @@
         },
         {
             "id": "prop9",
-            "type": "Flat",
+            "type": "Cottage",
             "bedrooms": 3,
             "price": 550000,
             "tenure": "Leasehold",
@@ -160,9 +160,10 @@
                 "year": 2022
             }
         },
+
         {
             "id": "prop21",
-			"type": "Penthouse",
+			"type": "Apartment",
             "bedrooms": 3,
 			"price": 1250000,
 			"tenure": "Leasehold",
@@ -177,14 +178,174 @@
             }
         },
         {
+            "id": "prop11",
+            "type": "Bungalow",
+            "bedrooms": 4,
+            "price": 950000,
+            "tenure": "Freehold",
+            "description": "A spacious four-bedroom detached house in a quiet cul-de-sac. Features include a modern kitchen, large garden, and double garage. Ideal for families looking for a peaceful neighborhood.",
+            "location": "Greenfield Road, Windsor SL4",
+            "picture": "public/assets/img8.jpg",
+            "url": "properties/prop11.html",
+            "added": {
+                "month": "March",
+                "day": 12,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop12",
+            "type": "Apartment",
+            "bedrooms": 1,
+            "price": 275000,
+            "tenure": "Leasehold",
+            "description": "A cozy studio apartment with modern finishes and a private balcony. Located in the heart of the city with excellent transport links and amenities nearby.",
+            "location": "Central Plaza, Manchester M1",
+            "picture": "public/assets/img6.jpg",
+            "url": "properties/prop12.html",
+            "added": {
+                "month": "June",
+                "day": 5,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop13",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 450000,
+            "tenure": "Freehold",
+            "description": "A charming three-bedroom semi-detached house featuring a modern kitchen, a well-maintained garden, and off-street parking. Perfect for young families or first-time buyers.",
+            "location": "Oak Lane, Bristol BS1",
+            "picture": "public/assets/img2.jpg",
+            "url": "properties/prop13.html",
+            "added": {
+                "month": "February",
+                "day": 28,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop14",
+            "type": "House",
+            "bedrooms": 5,
+            "price": 1200000,
+            "tenure": "Freehold",
+            "description": "A luxurious five-bedroom townhouse spread across three floors. This home offers high-end finishes, a private garden, and a double garage. Situated in an exclusive gated community.",
+            "location": "Highbury Park, London N5",
+            "picture": "public/assets/img3.jpg",
+            "url": "properties/prop14.html",
+            "added": {
+                "month": "May",
+                "day": 15,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop15",
+            "type": "Cottage",
+            "bedrooms": 2,
+            "price": 350000,
+            "tenure": "Freehold",
+            "description": "A picturesque two-bedroom cottage with a thatched roof and a beautifully landscaped garden. Located in a tranquil village setting.",
+            "location": "Rosewood Lane, Cotswolds GL7",
+            "picture": "public/assets/img7.jpg",
+            "url": "properties/prop15.html",
+            "added": {
+                "month": "July",
+                "day": 8,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop16",
+            "type": "Apartment",
+            "bedrooms": 2,
+            "price": 875000,
+            "tenure": "Leasehold",
+            "description": "A high-specification two-bedroom luxury apartment with floor-to-ceiling windows and a private balcony offering river views. Located in a sought-after riverside development.",
+            "location": "Riverside Quay, Battersea SW11",
+            "picture": "public/assets/img6.jpg",
+            "url": "properties/prop16.html",
+            "added": {
+                "month": "November",
+                "day": 22,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop17",
+            "type": "Bungalow",
+            "bedrooms": 3,
+            "price": 525000,
+            "tenure": "Freehold",
+            "description": "A bright and airy three-bedroom bungalow with a large wrap-around garden and off-road parking. Located in a quiet residential area close to local amenities.",
+            "location": "Meadow Lane, Canterbury CT1",
+            "picture": "public/assets/img10.jpg",
+            "url": "properties/prop17.html",
+            "added": {
+                "month": "April",
+                "day": 10,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop18",
+            "type": "Condo",
+            "bedrooms": 4,
+            "price": 1500000,
+            "tenure": "Leasehold",
+            "description": "A breathtaking four-bedroom penthouse with a private rooftop garden. Features include a fully integrated kitchen, marble bathrooms, and stunning city views.",
+            "location": "Skyline Residences, Chelsea SW3",
+            "picture": "public/assets/img5.jpg",
+            "url": "properties/prop18.html",
+            "added": {
+                "month": "January",
+                "day": 18,
+                "year": 2023
+            }
+        },
+        {
+            "id": "prop19",
+            "type": "House",
+            "bedrooms": 3,
+            "price": 700000,
+            "tenure": "Leasehold",
+            "description": "A stylish three-bedroom duplex apartment with two private balconies and a spacious open-plan living area. Close to top schools and transport links.",
+            "location": "Elmwood Court, Oxford OX1",
+            "picture": "public/assets/img2.jpg",
+            "url": "properties/prop19.html",
+            "added": {
+                "month": "October",
+                "day": 30,
+                "year": 2022
+            }
+        },
+        {
+            "id": "prop20",
+            "type": "Condo",
+            "bedrooms": 3,
+            "price": 425000,
+            "tenure": "Freehold",
+            "description": "A beautifully presented three-bedroom terraced house featuring a modern kitchen, a spacious living room, and a private garden. Ideal for commuters and families.",
+            "location": "Ash Lane, Reading RG1",
+            "picture": "public/assets/img6.jpg",
+            "url": "properties/prop20.html",
+            "added": {
+                "month": "September",
+                "day": 14,
+                "year": 2023
+            }
+        },
+        {
             "id": "prop22",
-			"type": "Studio",
+			"type": "Bungalow",
             "bedrooms": 1,
 			"price": 225000,
 			"tenure": "Leasehold",
 			"description": "A compact yet well-designed studio flat located close to transport links. The flat features a modern kitchen, a living/bedroom area, and a sleek bathroom. Ideal for professionals or as a pied-à-terre.",
 			"location": "Central Avenue, Bromley BR1",
-			"picture": "public/assets/img2.jpg",
+			"picture": "public/assets/img9.jpg",
 			"url": "properties/prop22.html",
             "added": {
                 "month": "December",
@@ -194,13 +355,13 @@
         },
         {
             "id": "prop23",
-			"type": "Villa",
+			"type": "Bungalow",
             "bedrooms": 5,
 			"price": 1750000,
 			"tenure": "Freehold",
 			"description": "An exquisite five-bedroom villa with expansive gardens and a private swimming pool. This luxury property offers a grand reception hall, a modern kitchen, and a master suite with a walk-in wardrobe and en-suite bathroom.",
 			"location": "Grange Road, Orpington BR6",
-			"picture": "public/assets/img3.jpg",
+			"picture": "public/assets/img8.jpg",
 			"url": "properties/prop23.html",
             "added": {
                 "month": "November",
@@ -210,13 +371,13 @@
         },
         {
             "id": "prop24",
-			"type": "Flat",
+			"type": "Apartment",
             "bedrooms": 2,
 			"price": 425000,
 			"tenure": "Leasehold",
 			"description": "A charming two-bedroom flat featuring a spacious lounge, a separate kitchen, and a balcony overlooking communal gardens. Located in a quiet residential area close to local amenities.",
 			"location": "Larch Grove, Bromley BR1",
-			"picture": "public/assets/img2.jpg",
+			"picture": "public/assets/img5.jpg",
 			"url": "properties/prop24.html",
             "added": {
                 "month": "October",
@@ -232,7 +393,7 @@
 			"tenure": "Freehold",
 			"description": "A spacious four-bedroom detached house offering a large kitchen/diner, a conservatory, and a beautifully landscaped garden. Perfect for families, with excellent schools nearby.",
 			"location": "Maple Lane, Orpington BR5",
-			"picture": "public/assets/img2.jpg",
+			"picture": "public/assets/img1.jpg",
 			"url": "properties/prop25.html",
             "added": {
                 "month": "September",
@@ -248,7 +409,7 @@
 			"tenure": "Leasehold",
 			"description": "A contemporary one-bedroom apartment in a secure development. The property includes an open-plan kitchen/living area, a double bedroom, and access to a residents-only gym.",
 			"location": "Parkside Residences, Bromley BR2",
-			"picture": "public/assets/img4.jpg",
+			"picture": "public/assets/img6.jpg",
 			"url": "properties/prop26.html",
             "added": {
                 "month": "August",
