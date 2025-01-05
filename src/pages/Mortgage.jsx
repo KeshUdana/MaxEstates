@@ -1,7 +1,12 @@
 import React from 'react';
+import NavigationBar from '../components/NavigationBar';
 
 const Mortgage = () => {
   return (
+    <>
+    <header className="header">
+          <NavigationBar />
+        </header>
     <div className="container my-5">
       <div className="row">
         <div className="col-lg-6 col-md-12 mb-4">
@@ -74,6 +79,7 @@ const Mortgage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
