@@ -1,31 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSSFiles/Footer.css";
 
-function Footer() {
-  const [isFooterVisible, setFooterVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrolledToBottom =
-        window.innerHeight + window.scrollY >= document.body.scrollHeight;
-      setFooterVisible(scrolledToBottom);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
+function Footer({ isVisible }) {
   return (
-    <footer className={`footer bg-dark text-light py-4 z-index-300${isFooterVisible ? "visible" : "hidden"}`}>
+    <footer
+      className={`footer bg-dark text-light py-4 z-index-300 ${
+        isVisible ? "footer-visible" : "footer-hidden"
+      }`}
+    >
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-4">
             <h5>About Us</h5>
             <p>
-              We are committed to providing the best property services for our users.
+              We are committed to providing the best property services for our
+              users.
             </p>
           </div>
           <div className="col-md-4">
@@ -53,7 +43,9 @@ function Footer() {
           </div>
         </div>
         <div className="text-center mt-3">
-          <p className="mb-0">&copy; {new Date().getFullYear()} MaxSpaces. All Rights Reserved.</p>
+          <p className="mb-0">
+            &copy; {new Date().getFullYear()} MaxSpaces. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

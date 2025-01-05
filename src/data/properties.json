@@ -10,6 +10,7 @@
 			"location":"Petts Wood Road, Petts Wood, Orpington BR5",
 			"picture":"public/assets/img1.jpg",
 			"url":"properties/prop1.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month":"October",
                 "day":12,

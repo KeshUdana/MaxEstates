@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const PropertyPage = ({ property, addToFavourites }) => {
-  const [activeTab, setActiveTab] = useState("description");
-
   if (!property) {
     return (
       <div className="d-flex justify-content-center align-items-center vh-100">
@@ -13,8 +13,6 @@ const PropertyPage = ({ property, addToFavourites }) => {
       </div>
     );
   }
-
-  const handleTabChange = (tab) => setActiveTab(tab);
 
   return (
     <div className="container py-4">
@@ -65,7 +63,6 @@ const PropertyPage = ({ property, addToFavourites }) => {
           <h5 className="card-title">{property.type}</h5>
           <p className="card-text text-muted">{property.location}</p>
           <p className="card-text fw-bold">£{property.price}</p>
-          <p className="card-text">{property.description}</p>
           <button
             onClick={() => addToFavourites(property)}
             className="btn btn-primary"
@@ -75,45 +72,27 @@ const PropertyPage = ({ property, addToFavourites }) => {
         </div>
       </div>
 
-      {/* Tabs Section */}
-      <ul className="nav nav-tabs mb-3" role="tablist">
-        <li className="nav-item" role="presentation">
-          <button
-            className={`nav-link ${activeTab === "description" ? "active" : ""}`}
-            onClick={() => handleTabChange("description")}
-          >
-            Description
-          </button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button
-            className={`nav-link ${activeTab === "floorplan" ? "active" : ""}`}
-            onClick={() => handleTabChange("floorplan")}
-          >
-            Floor Plan
-          </button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button
-            className={`nav-link ${activeTab === "map" ? "active" : ""}`}
-            onClick={() => handleTabChange("map")}
-          >
-            Google Map
-          </button>
-        </li>
-      </ul>
+      {/* React Tabs Section */}
+      <Tabs>
+        {/* Tab List */}
+        <TabList>
+          <Tab>Description</Tab>
+          <Tab>Floor Plan</Tab>
+          <Tab>Google Map</Tab>
+        </TabList>
 
-      {/* Tab Content */}
-      <div className="tab-content">
-        {activeTab === "description" && <p>{property.description}</p>}
-        {activeTab === "floorplan" && (
+        {/* Tab Panels */}
+        <TabPanel>
+          <p>{property.description}</p>
+        </TabPanel>
+        <TabPanel>
           <img
             src={property.floorPlan}
             alt="Floor Plan"
             className="img-fluid rounded"
           />
-        )}
-        {activeTab === "map" && (
+        </TabPanel>
+        <TabPanel>
           <iframe
             src={`https://www.google.com/maps?q=${property.latitude},${property.longitude}&output=embed`}
             width="100%"
@@ -123,8 +102,8 @@ const PropertyPage = ({ property, addToFavourites }) => {
             title="Google Map"
             className="rounded"
           ></iframe>
-        )}
-      </div>
+        </TabPanel>
+      </Tabs>
     </div>
   );
 };

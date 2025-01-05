@@ -8,10 +8,12 @@ import Footer from "./components/Footer";
 import PropertyPage from "./components/PropertyPage";
 import BuyPage from "./pages/BuyPage";
 import RentPage from "./pages/RentPage";
+import Valuation from "./pages/Valuation";
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import Mortgage from "./pages/mortgage";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -71,7 +73,10 @@ function App() {
             <Route path="/buy" element={<BuyPage />} />
             {/*Rent Page Route*/}
             <Route path="/rent" element={<RentPage />} />
-
+           {/*Valuation page*/ }
+            <Route path="/val"element={<Valuation/>}/>
+            {/*Mortgage page*/}
+            <Route path="/mortgage" element={<Mortgage/>}/>
 
             {/* Render selected property details */}
             {selectedProperty && (
@@ -95,9 +100,8 @@ function App() {
           
 
           {/* Footer */}
-          <footer className={`footer ${footerVisible ? "footer-visible" : ""}`}>
-            <Footer />
-          </footer>
+          <Footer isVisible={footerVisible} />
+
         </main>
       </div>
     </Router>

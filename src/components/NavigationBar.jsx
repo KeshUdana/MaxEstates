@@ -63,7 +63,7 @@ function NavigationBar() {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <Link className="dropdown-item" to="/valuation">
+                <Link className="dropdown-item" to="/val">
                   Get a Valuation
                 </Link>
               </li>
