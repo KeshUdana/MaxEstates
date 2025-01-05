@@ -45,7 +45,7 @@ function NavigationBar() {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <Link className="dropdown-item" to="/buy">
+                <Link className="dropdown-item" to="/rent">
                   Property for Rent
                 </Link>
               </li>

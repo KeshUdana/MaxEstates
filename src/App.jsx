@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavigationBar from "./components/NavigationBar";
 import SearchFilter from "./components/SearchFilter";
-import LoginCard from "./components/LoginCard";
 import Results from "./components/Results";
 import Footer from "./components/Footer";
 import PropertyPage from "./components/PropertyPage";
 import BuyPage from "./pages/BuyPage";
+import RentPage from "./pages/RentPage";
 
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -69,6 +69,8 @@ function App() {
 
             {/* Buy Page Route */}
             <Route path="/buy" element={<BuyPage />} />
+            {/*Rent Page Route*/}
+            <Route path="/rent" element={<RentPage />} />
 
 
             {/* Render selected property details */}
@@ -90,10 +92,7 @@ function App() {
             </div>
           )}
 
-          {/* Login Card */}
-          <div className="d-flex justify-content-center align-items-center vh-80">
-            <LoginCard />
-          </div>
+          
 
           {/* Footer */}
           <footer className={`footer ${footerVisible ? "footer-visible" : ""}`}>
