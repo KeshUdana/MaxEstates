@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import PropertyPage from "./PropertyPage"; // Import PropertyPage component
+import PropertyPage from "./PropertyPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Results = ({ results }) => {
-  const [selectedProperty, setSelectedProperty] = useState(null); // Store the selected property
+  const [selectedProperty, setSelectedProperty] = useState(null); 
 
   const handlePropertyClick = (property) => {
-    setSelectedProperty(property); // Set the selected property when clicked
+    setSelectedProperty(property); 
   };
 
   const handleClose = () => {
-    setSelectedProperty(null); // Close the modal
+    setSelectedProperty(null); 
   };
 
   return (
@@ -39,7 +39,6 @@ const Results = ({ results }) => {
         ))}
       </div>
 
-      {/* Bootstrap Modal for PropertyPage */}
       {selectedProperty && (
         <div
           className="modal fade show"

@@ -27,6 +27,7 @@
 			"location":"Crofton Road Orpington BR6",
 			"picture":"public/assets/img4.jpg",
 			"url":"properties/prop2.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month":"September",
                 "day":14,
@@ -43,6 +44,7 @@
             "location": "Oakwood Avenue, Bromley BR1",
             "picture": "public/assets/img2.jpg",
             "url": "properties/prop3.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "November",
                 "day": 5,
@@ -59,6 +61,7 @@
             "location": "High Street, Bromley BR1",
             "picture": "ipublic/assets/img1.jpg",
             "url": "properties/prop4.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "August",
                 "day": 20,
@@ -75,6 +78,7 @@
             "location": "Elmfield Park, Orpington BR6",
             "picture": "public/assets/img3.jpg",
             "url": "properties/prop5.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "July",
                 "day": 15,
@@ -91,6 +95,7 @@
             "location": "The Tower, Bromley BR2",
             "picture": "public/assets/img2.jpg",
             "url": "properties/prop6.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "June",
                 "day": 10,
@@ -107,6 +112,7 @@
             "location": "West Lane, Orpington BR5",
             "picture": "public/assets/img1.jpg",
             "url": "properties/prop7.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "May",
                 "day": 28,
@@ -123,6 +129,7 @@
             "location": "Hillcrest Road, Bromley BR1",
             "picture": "public/assets/img1.jpg",
             "url": "properties/prop8.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "April",
                 "day": 18,
@@ -139,6 +146,7 @@
             "location": "Kingsway Court, Orpington BR6",
             "picture": "public/assets/img3.jpg",
             "url": "properties/prop9.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "March",
                 "day": 14,
@@ -155,6 +163,7 @@
             "location": "Willow Close, Bromley BR1",
             "picture": "public/assets/img3.jpg",
             "url": "properties/prop10.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "February",
                 "day": 8,
@@ -172,6 +181,7 @@
 			"location": "Skyline Towers, Bromley BR2",
 			"picture": "public/assets/img3.jpg",
 			"url": "properties/prop21.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "January",
                 "day": 20,
@@ -188,6 +198,7 @@
             "location": "Greenfield Road, Windsor SL4",
             "picture": "public/assets/img8.jpg",
             "url": "properties/prop11.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "March",
                 "day": 12,
@@ -204,6 +215,7 @@
             "location": "Central Plaza, Manchester M1",
             "picture": "public/assets/img6.jpg",
             "url": "properties/prop12.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "June",
                 "day": 5,
@@ -220,6 +232,7 @@
             "location": "Oak Lane, Bristol BS1",
             "picture": "public/assets/img2.jpg",
             "url": "properties/prop13.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "February",
                 "day": 28,
@@ -236,6 +249,7 @@
             "location": "Highbury Park, London N5",
             "picture": "public/assets/img3.jpg",
             "url": "properties/prop14.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "May",
                 "day": 15,
@@ -252,6 +266,7 @@
             "location": "Rosewood Lane, Cotswolds GL7",
             "picture": "public/assets/img7.jpg",
             "url": "properties/prop15.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "July",
                 "day": 8,
@@ -268,6 +283,7 @@
             "location": "Riverside Quay, Battersea SW11",
             "picture": "public/assets/img6.jpg",
             "url": "properties/prop16.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "November",
                 "day": 22,
@@ -284,6 +300,7 @@
             "location": "Meadow Lane, Canterbury CT1",
             "picture": "public/assets/img10.jpg",
             "url": "properties/prop17.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "April",
                 "day": 10,
@@ -300,6 +317,7 @@
             "location": "Skyline Residences, Chelsea SW3",
             "picture": "public/assets/img5.jpg",
             "url": "properties/prop18.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "January",
                 "day": 18,
@@ -316,6 +334,7 @@
             "location": "Elmwood Court, Oxford OX1",
             "picture": "public/assets/img2.jpg",
             "url": "properties/prop19.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "October",
                 "day": 30,
@@ -332,6 +351,7 @@
             "location": "Ash Lane, Reading RG1",
             "picture": "public/assets/img6.jpg",
             "url": "properties/prop20.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "September",
                 "day": 14,
@@ -348,6 +368,7 @@
 			"location": "Central Avenue, Bromley BR1",
 			"picture": "public/assets/img9.jpg",
 			"url": "properties/prop22.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "December",
                 "day": 15,
@@ -364,6 +385,7 @@
 			"location": "Grange Road, Orpington BR6",
 			"picture": "public/assets/img8.jpg",
 			"url": "properties/prop23.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "November",
                 "day": 2,
@@ -380,6 +402,7 @@
 			"location": "Larch Grove, Bromley BR1",
 			"picture": "public/assets/img5.jpg",
 			"url": "properties/prop24.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "October",
                 "day": 10,
@@ -395,6 +418,7 @@
 			"description": "A spacious four-bedroom detached house offering a large kitchen/diner, a conservatory, and a beautifully landscaped garden. Perfect for families, with excellent schools nearby.",
 			"location": "Maple Lane, Orpington BR5",
 			"picture": "public/assets/img1.jpg",
+            "floorPlan":"public/assets/fp1.jpg",
 			"url": "properties/prop25.html",
             "added": {
                 "month": "September",
@@ -412,6 +436,7 @@
 			"location": "Parkside Residences, Bromley BR2",
 			"picture": "public/assets/img6.jpg",
 			"url": "properties/prop26.html",
+            "floorPlan":"public/assets/fp1.jpg",
             "added": {
                 "month": "August",
                 "day": 18,

@@ -9,63 +9,35 @@ function Carousel() {
               <div className="carousel-inner">
                   <div className="carousel-item active">
                       <img
-                          src="/assets/Screenshot 2024-12-26 143203.png"
+                          src="/assets/img1.jpg"
                           className="d-block w-100"
                           alt="..."
                       />
                   </div>
                   <div className="carousel-item">
                       <img
-                          src="/assets/Screenshot 2024-12-26 143227.png"
+                          src="/assets/img2.jpg"
                           className="d-block w-100"
                           alt="..."
                       />
                   </div>
                   <div className="carousel-item">
                       <img
-                          src="/assets/Screenshot 2024-12-26 143250.png"
+                          src="/assets/img4.jpg"
                           className="d-block w-100"
                           alt="..."
                       />
                   </div>
                   <div className="carousel-item">
                       <img
-                          src="/assets/Screenshot 2024-12-26 143303.png"
+                          src="/assets/img5.jpg"
                           className="d-block w-100"
                           alt="..."
                       />
                   </div>
                   <div className="carousel-item">
                       <img
-                          src="/assets/Screenshot 2024-12-26 143336.png"
-                          className="d-block w-100"
-                          alt="..."
-                      />
-                  </div>
-                  <div className="carousel-item">
-                      <img
-                          src="/assets/Screenshot 2024-12-26 143344.png"
-                          className="d-block w-100"
-                          alt="..."
-                      />
-                  </div>
-                  <div className="carousel-item">
-                      <img
-                          src="/assets/Screenshot 2024-12-26 143352.png"
-                          className="d-block w-100"
-                          alt="..."
-                      />
-                  </div>
-                  <div className="carousel-item">
-                      <img
-                          src="/assets/Screenshot 2024-12-26 143626.png"
-                          className="d-block w-100"
-                          alt="..."
-                      />
-                  </div>
-                  <div className="carousel-item">
-                      <img
-                          src="/assets/Screenshot 2024-12-26 143636.png"
+                          src="/assets/img6.jpg"
                           className="d-block w-100"
                           alt="..."
                       />
