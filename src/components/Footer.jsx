@@ -1,11 +1,7 @@
 function Footer({ isVisible }) {
   return (
-    <footer
-      className={`footer ${
-        isVisible ? "footer-visible" : "footer-hidden"
-      }`}
-    >
-      <div className="container-fluid">
+    <footer>
+      <div className="container-fluid bg-light bg-gradient">
         <div className="row">
           <div className="col-md-4">
             <h5>About Us</h5>

@@ -86,7 +86,7 @@ function App() {
             </div>
           )}
 
-          {/* Footer */}
+         
           <Footer />
         </main>
       </div>

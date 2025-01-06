@@ -48,7 +48,7 @@ function SearchFilter({ setFilters, setResults }) {
     });
 
     setFilters(localFilters);
-    setResults(filtered); // Pass filtered results to App
+    setResults(filtered); 
   };
 
   return (

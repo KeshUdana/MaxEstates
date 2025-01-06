@@ -10,11 +10,11 @@
 }
 .header {
   width: 100%;
-  position: fixed; /* Make the navbar stick to the top */
+  position: fixed; 
   top: 0;
   left:0;
-  z-index: 1000; /* Ensures it stays above other content */
-  background-color: #f8f9fa; /* Set a background color (can adjust to match your theme) */
+  z-index: 1000; 
+  background-color: #f8f9fa; 
 }
 
 
