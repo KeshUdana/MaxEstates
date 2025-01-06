@@ -1,11 +1,7 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../CSSFiles/Footer.css";
-
 function Footer({ isVisible }) {
   return (
     <footer
-      className={`footer bg-dark text-light py-4 z-index-300 ${
+      className={`footer ${
         isVisible ? "footer-visible" : "footer-hidden"
       }`}
     >

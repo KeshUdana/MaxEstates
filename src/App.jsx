@@ -9,7 +9,7 @@ import PropertyPage from "./components/PropertyPage";
 import BuyPage from "./pages/BuyPage";
 import RentPage from "./pages/RentPage";
 import Valuation from "./pages/Valuation";
-
+import Carousel from "./components/Carousel";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -20,7 +20,6 @@ function App() {
   const [filters, setFilters] = useState(null);
   const [filteredResults, setFilteredResults] = useState([]);
   const [selectedProperty, setSelectedProperty] = useState(null);
-  const [footerVisible, setFooterVisible] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,19 +30,6 @@ function App() {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isBottom =
-        window.innerHeight + document.documentElement.scrollTop >=
-        document.documentElement.offsetHeight - 1;
-      setFooterVisible(isBottom);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handlePropertyClick = (property) => {
@@ -57,6 +43,9 @@ function App() {
           <NavigationBar />
         </header>
         <main>
+          <div>
+            <Carousel />
+          </div>
           <Routes>
             {/* Home Page Route */}
             <Route
@@ -71,12 +60,12 @@ function App() {
 
             {/* Buy Page Route */}
             <Route path="/buy" element={<BuyPage />} />
-            {/*Rent Page Route*/}
+            {/* Rent Page Route */}
             <Route path="/rent" element={<RentPage />} />
-           {/*Valuation page*/ }
-            <Route path="/val"element={<Valuation/>}/>
-            {/*Mortgage page*/}
-            <Route path="/mortgage" element={<Mortgage/>}/>
+            {/* Valuation Page */}
+            <Route path="/val" element={<Valuation />} />
+            {/* Mortgage Page */}
+            <Route path="/mortgage" element={<Mortgage />} />
 
             {/* Render selected property details */}
             {selectedProperty && (
@@ -97,11 +86,8 @@ function App() {
             </div>
           )}
 
-          
-
           {/* Footer */}
-          <Footer isVisible={footerVisible} />
-
+          <Footer />
         </main>
       </div>
     </Router>
